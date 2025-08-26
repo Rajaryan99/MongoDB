@@ -17,6 +17,7 @@ nav h1 {
     padding: 10px;
     background-color: rgba(40, 130, 70, 0.741);
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .msg {
@@ -34,4 +35,12 @@ nav h1 {
     color: #fff;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.time {
+    font-size: 13px;
+}
+
+.date {
+    font-size: 15px;
 }

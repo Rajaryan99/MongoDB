@@ -22,14 +22,24 @@
                 <p>
                     <%=chat.msg%>
                 </p>
+                <a href="/chats/<%=chat._id%>/edit">edit</a>
+                <form action="/chats/<%=chat._id%>?_method=DELETE" method="post">
+                    <BUTTon>DELETE</BUTTon>
+                </form>
             </div>
             <p>Received by: <%= chat.to%>
             </p>
+            <hr>
+            <p class="time">
+                <%=chat.created_at.toString().split(" ")[4]%></p>
+               <p class=" date">
+                    <%=chat.created_at.toString().split(" ").slice(0, 4).join(" -")%>
+            </p>
         </div>
-        <hr>
+
         <%} %>
 
-            <form action="/chats/new" method="get">
+            <form action=" /chats/new" method="get">
                 <button class="newbtn">New Chat</button>
             </form>
 
